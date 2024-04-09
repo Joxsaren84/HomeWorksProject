@@ -22,6 +22,10 @@ public class Student {
 }
 
 class StudentTest{
+
+    void showAverageGrade(Student s){
+        System.out.printf("Average grade: %.1f\n\n", (s.mathAverage + s.economyAverage + s.foreignLangAverage)/3);
+    }
     public static void main(String[] args) {
         Student student1 = new Student();
         student1.name = "Jonny";
@@ -50,16 +54,21 @@ class StudentTest{
         student3.economyAverage = 4;
         student3.foreignLangAverage = 5;
 
+        StudentTest st = new StudentTest();
+
         System.out.println("Name: " + student1.name);
         System.out.println("Last name: " + student1.lastName);
-        System.out.printf("Average grade: %.1f\n\n", (student1.mathAverage + student1.economyAverage + student1.foreignLangAverage)/3);
+        //System.out.printf("Average grade: %.1f\n\n", (student1.mathAverage + student1.economyAverage + student1.foreignLangAverage)/3);
+        st.showAverageGrade(student1);
 
         System.out.println("Name: " + student2.name);
         System.out.println("Last name: " + student2.lastName);
-        System.out.printf("Average grade: %.1f\n\n", (student2.mathAverage + student2.economyAverage + student2.foreignLangAverage)/3);
+        //System.out.printf("Average grade: %.1f\n\n", (student2.mathAverage + student2.economyAverage + student2.foreignLangAverage)/3);
+        st.showAverageGrade(student2);
 
         System.out.println("Name: " + student3.name);
         System.out.println("Last name: " + student3.lastName);
-        System.out.printf("Average grade: %.1f\n\n", (student3.mathAverage + student3.economyAverage + student3.foreignLangAverage)/3);
+        //System.out.printf("Average grade: %.1f\n\n", (student3.mathAverage + student3.economyAverage + student3.foreignLangAverage)/3);
+        st.showAverageGrade(student3);
     }
 }
