@@ -19,6 +19,23 @@ public class Student {
 
     String name;
     String lastName;
+
+    Student(int studentId, int course, double mathAverage,
+            double economyAverage, double foreignLangAverage, String name, String lastName){
+        this.studentId = studentId;
+        this.course = course;
+        this.mathAverage = mathAverage;
+        this.economyAverage = economyAverage;
+        this.foreignLangAverage = foreignLangAverage;
+        this.name = name;
+        this.lastName = lastName;
+    }
+
+    Student(int studentId, int course, String name, String lastName){
+        this(studentId, course, 0, 0, 0, name, lastName);
+    }
+
+    Student(){}
 }
 
 class StudentTest{
@@ -27,7 +44,8 @@ class StudentTest{
         System.out.printf("Average grade: %.1f\n\n", (s.mathAverage + s.economyAverage + s.foreignLangAverage)/3);
     }
     public static void main(String[] args) {
-        Student student1 = new Student();
+        Student student1 = new Student(1000, 3, 5, 5, 5, "Jonny", "Page");
+        /*
         student1.name = "Jonny";
         student1.lastName = "Page";
         student1.course = 3;
@@ -35,12 +53,13 @@ class StudentTest{
         student1.mathAverage = 5;
         student1.economyAverage = 5;
         student1.foreignLangAverage = 5;
+        */
 
-        Student student2 = new Student();
-        student2.name = "Yoko";
-        student2.lastName = "Ona";
-        student2.course = 1;
-        student2.studentId = 1001;
+        Student student2 = new Student(1001, 3, "Yoko", "Ona");
+        //student2.name = "Yoko";
+        //student2.lastName = "Ona";
+        //student2.course = 1;
+        //student2.studentId = 1001;
         student2.mathAverage = 3;
         student2.economyAverage = 3;
         student2.foreignLangAverage = 4;
