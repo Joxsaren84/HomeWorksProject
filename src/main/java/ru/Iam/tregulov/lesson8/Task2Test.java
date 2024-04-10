@@ -12,6 +12,7 @@ public class Task2Test {
 
         System.out.println("The area of the circle is " + task.circleArea(10));
 
-        task.circleInfo(10);
+
+        task.circleInfo(11);
     }
 }
