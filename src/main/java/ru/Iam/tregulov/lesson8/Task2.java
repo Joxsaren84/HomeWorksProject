@@ -1,14 +1,14 @@
 package ru.Iam.tregulov.lesson8;
 
 public class Task2 {
-    static final double pi = 3.14;
+    static final double Pi = 3.14;
 
     public double circleArea(double r){
-        return pi * r * r;
+        return Pi * r * r;
     }
 
     public static double circumference(double r){
-        return pi * r * 2;
+        return Pi * r * 2;
     }
 
     public void circleInfo(double r){
