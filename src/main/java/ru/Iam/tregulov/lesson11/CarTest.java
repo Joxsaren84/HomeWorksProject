@@ -2,7 +2,7 @@ package ru.Iam.tregulov.lesson11;
 
 public class CarTest {
 
-    static void changeNumberCountOfDoors(Car car, int newNumber ){
+    static void changeNumberCountOfDoors(Car car, int newNumber){
         car.numberOfDoors = newNumber;
     }
 
@@ -28,6 +28,9 @@ public class CarTest {
 
         //в car2 вьехал самокат, и оторвал открытую дверь и теперь дверь всего одна...
         changeNumberCountOfDoors(car2, 1);
+        car2.showInfo();
+        //починили
+        changeNumberCountOfDoors(car2, 2);
         car2.showInfo();
     }
 }
