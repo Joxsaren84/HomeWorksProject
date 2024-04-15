@@ -1,4 +1,4 @@
-package ru.Iam.tregulov.Lesson15;
+package ru.Iam.tregulov.lesson15;
 
 public class Lesson15 {
     public static void main(String[] args) {
