@@ -6,7 +6,7 @@ public class Lesson16 {
 
         while (str.length() > 0) {
             System.out.println(str.substring(str.indexOf('@') + 1, str.indexOf('.'))); //находим и выводим первую подстроку от @ до .
-            str = str.substring(str.indexOf(';') + 1); //обрезаем к чертям все что до первого вхождения ';' и саму запеточку
+            str = str.substring(str.indexOf(';') + 1); //обрезаем к чертям все что до первого вхождения ';' и саму запяточку
         }
     }
 
