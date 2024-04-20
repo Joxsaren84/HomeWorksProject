@@ -49,6 +49,7 @@ public class Atm {
 
         while(true){
             System.out.println("Введите сумму для снятия или -1 для выхода");
+
             int money = scanner.nextInt();
             if(money == -1) {
                 System.out.println("Всего хорошего!");
