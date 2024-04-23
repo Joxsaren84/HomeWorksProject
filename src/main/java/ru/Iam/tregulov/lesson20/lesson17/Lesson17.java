@@ -1,4 +1,4 @@
-package ru.Iam.tregulov.lesson17;
+package ru.Iam.tregulov.lesson20.lesson17;
 
 public class Lesson17 {
 
