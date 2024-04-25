@@ -14,6 +14,6 @@ public class Test {
 
     public static void main(String[] args) {
         Y a = new Y();
-        //abc(a, a);
+        abc(((X)a), a); //исправим кастингом
     }
 }
