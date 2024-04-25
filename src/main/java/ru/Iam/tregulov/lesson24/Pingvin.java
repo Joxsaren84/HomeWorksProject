@@ -2,9 +2,9 @@ package ru.Iam.tregulov.lesson24;
 
 public class Pingvin extends Bird{
 
-    String name;
+    public String name;
 
-    Pingvin(String name) {
+    public Pingvin(String name) {
         super(name);
         this.name = name;
     }

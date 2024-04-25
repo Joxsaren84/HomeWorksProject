@@ -2,9 +2,9 @@ package ru.Iam.tregulov.lesson24;
 
 public class Lev extends Mammal{
 
-    String name;
+    public String name;
 
-    Lev(String name) {
+    public Lev(String name) {
         super(name);
         this.name = name;
     }

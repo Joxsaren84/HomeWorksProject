@@ -2,9 +2,9 @@ package ru.Iam.tregulov.lesson24;
 
 public abstract class Animal {
 
-    String name;
+   public String name;
 
-    Animal(String name){
+    public Animal(String name){
         this.name = name;
     }
 

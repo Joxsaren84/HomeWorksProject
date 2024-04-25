@@ -2,9 +2,9 @@ package ru.Iam.tregulov.lesson24;
 
 public abstract class Fish extends Animal{
 
-    String name;
+    public String name;
 
-    Fish(String name) {
+    public Fish(String name) {
         super(name);
         this.name = name;
     }

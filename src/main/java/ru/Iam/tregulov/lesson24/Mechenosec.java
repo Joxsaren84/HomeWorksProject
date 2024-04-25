@@ -2,9 +2,9 @@ package ru.Iam.tregulov.lesson24;
 
 public class Mechenosec extends Fish{
 
-    String name;
+    public String name;
 
-    Mechenosec(String name) {
+    public Mechenosec(String name) {
         super(name);
         this.name = name;
     }
